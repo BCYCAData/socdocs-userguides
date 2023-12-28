@@ -1,0 +1,1 @@
+import{r as e}from"../chunks/index.qPAo0Isn.js";const r=!0,o=async()=>{e(307,"/faqs/faq")},a=Object.freeze(Object.defineProperty({__proto__:null,load:o,prerender:r},Symbol.toStringTag,{value:"Module"}));export{a as universal};

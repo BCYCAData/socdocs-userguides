@@ -1,0 +1,205 @@
+{
+	"version": 3,
+	"routes": [
+		{
+			"src": "/faqs",
+			"headers": {
+				"Location": "/faqs/faq"
+			},
+			"status": 307
+		},
+		{
+			"src": "/messaging",
+			"headers": {
+				"Location": "/messaging/introduction"
+			},
+			"status": 307
+		},
+		{
+			"src": "/recording-your-data",
+			"headers": {
+				"Location": "/recording-your-data/introduction/overview"
+			},
+			"status": 307
+		},
+		{
+			"src": "/using-your-data",
+			"headers": {
+				"Location": "/using-your-data/introduction"
+			},
+			"status": 307
+		},
+		{
+			"src": "/faqs/faq",
+			"dest": "/faqs/faq/"
+		},
+		{
+			"src": "/faqs/faq/",
+			"status": 308,
+			"headers": {
+				"Location": "/faqs/faq"
+			}
+		},
+		{
+			"src": "/messaging/introduction",
+			"dest": "/messaging/introduction/"
+		},
+		{
+			"src": "/messaging/introduction/",
+			"status": 308,
+			"headers": {
+				"Location": "/messaging/introduction"
+			}
+		},
+		{
+			"src": "/using-your-data/introduction",
+			"dest": "/using-your-data/introduction/"
+		},
+		{
+			"src": "/using-your-data/introduction/",
+			"status": 308,
+			"headers": {
+				"Location": "/using-your-data/introduction"
+			}
+		},
+		{
+			"src": "/recording-your-data/introduction/overview",
+			"dest": "/recording-your-data/introduction/overview/"
+		},
+		{
+			"src": "/recording-your-data/introduction/overview/",
+			"status": 308,
+			"headers": {
+				"Location": "/recording-your-data/introduction/overview"
+			}
+		},
+		{
+			"src": "/recording-your-data/introduction/initial-survey",
+			"dest": "/recording-your-data/introduction/initial-survey/"
+		},
+		{
+			"src": "/recording-your-data/introduction/initial-survey/",
+			"status": 308,
+			"headers": {
+				"Location": "/recording-your-data/introduction/initial-survey"
+			}
+		},
+		{
+			"src": "/recording-your-data/introduction/profile",
+			"dest": "/recording-your-data/introduction/profile/"
+		},
+		{
+			"src": "/recording-your-data/introduction/profile/",
+			"status": 308,
+			"headers": {
+				"Location": "/recording-your-data/introduction/profile"
+			}
+		},
+		{
+			"src": "/recording-your-data/survey/pages",
+			"dest": "/recording-your-data/survey/pages/"
+		},
+		{
+			"src": "/recording-your-data/survey/pages/",
+			"status": 308,
+			"headers": {
+				"Location": "/recording-your-data/survey/pages"
+			}
+		},
+		{
+			"src": "/recording-your-data/profile/about-me",
+			"dest": "/recording-your-data/profile/about-me/"
+		},
+		{
+			"src": "/recording-your-data/profile/about-me/",
+			"status": 308,
+			"headers": {
+				"Location": "/recording-your-data/profile/about-me"
+			}
+		},
+		{
+			"src": "/recording-your-data/profile/about-my-place",
+			"dest": "/recording-your-data/profile/about-my-place/"
+		},
+		{
+			"src": "/recording-your-data/profile/about-my-place/",
+			"status": 308,
+			"headers": {
+				"Location": "/recording-your-data/profile/about-my-place"
+			}
+		},
+		{
+			"src": "/recording-your-data/profile/my-community",
+			"dest": "/recording-your-data/profile/my-community/"
+		},
+		{
+			"src": "/recording-your-data/profile/my-community/",
+			"status": 308,
+			"headers": {
+				"Location": "/recording-your-data/profile/my-community"
+			}
+		},
+		{
+			"src": "/recording-your-data/profile/settings",
+			"dest": "/recording-your-data/profile/settings/"
+		},
+		{
+			"src": "/recording-your-data/profile/settings/",
+			"status": 308,
+			"headers": {
+				"Location": "/recording-your-data/profile/settings"
+			}
+		},
+		{
+			"src": "/_app/immutable/.+",
+			"headers": {
+				"cache-control": "public, immutable, max-age=31536000"
+			}
+		},
+		{
+			"handle": "filesystem"
+		},
+		{
+			"src": "/.*",
+			"dest": "/fn"
+		}
+	],
+	"overrides": {
+		"index.html": {
+			"path": ""
+		},
+		"faqs/faq.html": {
+			"path": "faqs/faq"
+		},
+		"messaging/introduction.html": {
+			"path": "messaging/introduction"
+		},
+		"using-your-data/introduction.html": {
+			"path": "using-your-data/introduction"
+		},
+		"recording-your-data/introduction/overview.html": {
+			"path": "recording-your-data/introduction/overview"
+		},
+		"recording-your-data/introduction/initial-survey.html": {
+			"path": "recording-your-data/introduction/initial-survey"
+		},
+		"recording-your-data/introduction/profile.html": {
+			"path": "recording-your-data/introduction/profile"
+		},
+		"recording-your-data/survey/pages.html": {
+			"path": "recording-your-data/survey/pages"
+		},
+		"recording-your-data/profile/about-me.html": {
+			"path": "recording-your-data/profile/about-me"
+		},
+		"recording-your-data/profile/about-my-place.html": {
+			"path": "recording-your-data/profile/about-my-place"
+		},
+		"recording-your-data/profile/my-community.html": {
+			"path": "recording-your-data/profile/my-community"
+		},
+		"recording-your-data/profile/settings.html": {
+			"path": "recording-your-data/profile/settings"
+		}
+	}
+}

@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="./favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+    <script>
+      const key = 'svelteness::color-scheme';
+      const scheme = localStorage[key];
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      if (scheme === 'dark' || (scheme !== 'light' && prefersDark)) {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
+    </script>
+  
+    
+		<link href="./_app/immutable/assets/0.5nkt_NPr.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/MermaidDiagram.QLlG1HIv.css" rel="stylesheet">
+		<link rel="modulepreload" href="./_app/immutable/entry/start.fBXH6Gs9.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/scheduler.Q2oRtGFl.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.bOxwbogp.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.fY_4XAxg.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/paths.xiBtOcvy.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/control.pJ1mnnAb.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.4aNdMc5w.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.rBajJ9mv.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/0.5q6dG5gF.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/contexts.JBvVPhDF.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/stores.6XwcVT7J.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/kit-docs.tsFGliE6.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/2.05isMctM.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/MermaidDiagram.svelte_svelte_type_style_lang.K-ovTI0K.js"><!-- HEAD_svelte-18oalgx_START --> <!-- HEAD_svelte-18oalgx_END -->
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">   <div class="kit-docs bg-body text-inverse min-h-full min-w-full h-full transition-transform duration-150 ease-out" style="font-family: var(--kd-font-family-sans, inherit); --kd-breadcrumbs-height: 0px; --kd--navbar-height: calc(var(--kd-navbar-height) + var(--kd-breadcrumbs-height));"><div class="fixed top-0 z-30 w-full flex-none transform-gpu transition-transform duration-150 ease-out blur-bg translate-y-0" style="border-bottom: var(--kd-navbar-border-bottom);"><div class="flex w-full flex-col items-center justify-center mx-auto max-w-[var(--kd-navbar-max-width)] p-[var(--kd-navbar-padding)] h-[var(--kd--navbar-height)]"><div class="flex w-full items-center"><div class="logo svelte-1616dhh" slot="navbar-left" data-svelte-h="svelte-n43v6b"><a href="/"><img height="24" src="/SOCLogo_quarter.png" alt="SOC Documentation"> <h1 style="padding-left: 20px; font-size: 1.5em; color:#050B17">SOC Documentation</h1></a></div>  <div class="flex-1"></div> <div class="992:hidden -mr-2 flex items-center"> <div class="not-prose relative inline-block text-left"><button id="popover-button-1" type="button" class="inline-flex w-full justify-center rounded-md p-2 text-lg font-medium transform-gpu transition-transform hover:scale-[1.025] text-soft hover:text-inverse" aria-controls="popover-1" aria-expanded="false" aria-haspopup="true"><svg viewBox="0 0 24 24" width="30" height="30"><!-- HTML_TAG_START --><path fill="currentColor" d="M18 18v2H6v-2zm3-7v2H3v-2zm-3-7v2H6V4z"/><!-- HTML_TAG_END --></svg> <span class="sr-only">Main navigation menu</span> </button> <div class="pointer-events-auto fixed top-0 left-0 z-40 backdrop-blur-sm backdrop-filter transition-opacity duration-75 bg-body/20 dark:bg-body/60 h-screen w-screen invisible opacity-0"></div> <div hidden></div> </div></div> <div class="992:flex 992:items-center hidden"><nav><ul class="flex items-center space-x-8"><li class="mt-4 first:mt-0 992:mt-0"><a class="text-soft text-base hover:font-medium font-base hover:underline hover:text-brand" href="/faqs">Frequently Asked Questions</a></li><li class="mt-4 first:mt-0 992:mt-0"><a class="text-soft text-base hover:font-medium font-base hover:underline hover:text-brand" href="/recording-your-data">Recording Your Data</a></li><li class="mt-4 first:mt-0 992:mt-0"><a class="text-soft text-base hover:font-medium font-base hover:underline hover:text-brand" href="/using-your-data">Using Your Data</a></li><li class="mt-4 first:mt-0 992:mt-0"><a class="text-soft text-base hover:font-medium font-base hover:underline hover:text-brand" href="/messaging">Messaging</a></li></ul></nav>   <div class="hidden 992:flex items-center ml-6"><div class="socials" slot="navbar-right-alt"> <a class="relative flex transform-gpu items-center rounded-md border-0 p-2 transition-transform hover:scale-[1.1]" href="https://github.com/sveltejs/svelte" target="_blank"><svg viewBox="0 0 24 24" width="24" height="24" class=""><!-- HTML_TAG_START --><path fill="currentColor" d="M12.001 2c-5.525 0-10 4.475-10 10a9.994 9.994 0 0 0 6.837 9.488c.5.087.688-.213.688-.476c0-.237-.013-1.024-.013-1.862c-2.512.463-3.162-.612-3.362-1.175c-.113-.288-.6-1.175-1.025-1.413c-.35-.187-.85-.65-.013-.662c.788-.013 1.35.725 1.538 1.025c.9 1.512 2.337 1.087 2.912.825c.088-.65.35-1.087.638-1.337c-2.225-.25-4.55-1.113-4.55-4.938c0-1.088.387-1.987 1.025-2.687c-.1-.25-.45-1.275.1-2.65c0 0 .837-.263 2.75 1.024a9.28 9.28 0 0 1 2.5-.337c.85 0 1.7.112 2.5.337c1.913-1.3 2.75-1.024 2.75-1.024c.55 1.375.2 2.4.1 2.65c.637.7 1.025 1.587 1.025 2.687c0 3.838-2.337 4.688-4.562 4.938c.362.312.675.912.675 1.85c0 1.337-.013 2.412-.013 2.75c0 .262.188.574.688.474A10.016 10.016 0 0 0 22 12c0-5.525-4.475-10-10-10"/><!-- HTML_TAG_END --></svg> <span class="sr-only">GitHub</span> </a></div>  <button class="min-w-[40px] min-h-[40px] flex items-center justify-center p-2 transform-gpu rounded-md border-0 transition-transform hover:scale-[1.1]"><svg viewBox="0 0 24 24" width="20" height="20"><!-- HTML_TAG_START --><path fill="currentColor" d="M12 18a6 6 0 1 1 0-12a6 6 0 0 1 0 12M11 1h2v3h-2zm0 19h2v3h-2zM3.515 4.929l1.414-1.414L7.05 5.636L5.636 7.05zM16.95 18.364l1.414-1.414l2.121 2.121l-1.414 1.414zm2.121-14.85l1.414 1.415l-2.121 2.121l-1.414-1.414zM5.636 16.95l1.414 1.414l-2.121 2.121l-1.414-1.414zM23 11v2h-3v-2zM4 11v2H1v-2z"/><!-- HTML_TAG_END --></svg> <span class="sr-only">Color Scheme</span></button></div></div></div>   </div></div> <div class="mx-auto w-full flex flex-row min-h-full max-w-[var(--kd-content-max-width)] pt-[var(--kd--navbar-height)] z-20"> <main class="w-full overflow-x-hidden 992:min-h-[calc(100vh-var(--kd--navbar-height))] min-h-[calc(100vh-var(--kd--navbar-height))]" style="max-width: var(--kd-main-max-width);"><div slot="main-top" data-svelte-h="svelte-11jzwts">Main Top</div> <div style="max-width: 992px; margin: 0 auto;"><h1 data-svelte-h="svelte-vwzmce">Welcome to KitDocs</h1> <p>This your home page. Feel free to change it to a Svelte file by renaming it to <code>+page.svelte</code>.</p> <h2 id="redirecting" tabindex="-1"> <a href="#redirecting" class="header-anchor" aria-hidden="true">#</a> Redirecting</h2> <p>You might want the home page to be the first page of your documentation. If this is the case,
+rename this file to <code>+page.js</code> and replace the content of this file with the following:</p> <div class="code-fence 576:max-h-[32rem] relative my-8 mx-auto max-h-[60vh] overflow-y-auto rounded-md prefers-dark-scheme scrollbar scroll-contain shadow-xl border-border border lang-javascript" style="background-color: var(--kd-code-fence-bg);"><div class="code-fence-top-bar sticky top-0 left-0 z-10 flex items-center py-1 pt-2 backdrop-blur backdrop-filter" style="background-color: var(--kd-code-fence-top-bar-bg);"><span class="code-fence-title ml-3.5 font-mono text-sm text-soft">js</span> <div class="flex-1"></div> <button type="button" class="mr-2 px-2 py-1 text-soft hover:text-inverse"><div class="absolute top-2.5 right-4 z-10 rounded-md px-2 py-1 font-mono text-sm transition-opacity duration-300 ease-out hidden opacity-0" aria-hidden="true" style="background-color: var(--kd-code-copied-bg-color);">Copied</div> <svg viewBox="0 0 24 24" width="24" height="24" class="duration-600 opacity-100 transition-opacity ease-in"><!-- HTML_TAG_START --><path fill="currentColor" d="M7 6V3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1h-3v3c0 .552-.45 1-1.007 1H4.007A1.001 1.001 0 0 1 3 21l.003-14c0-.552.45-1 1.006-1zM5.002 8L5 20h10V8zM9 6h8v10h2V4H9z"/><!-- HTML_TAG_END --></svg> <span class="sr-only" data-svelte-h="svelte-1cbrti2">Copy</span></button></div> <div class="code relative z-0 overflow-hidden"><div class=""><pre class="relative scrollbar overflow-scroll pl-3">        <!-- HTML_TAG_START --><code><span class="line"><span style="color: #89DDFF; font-style: italic">import</span><span style="color: #BABED8"> </span><span style="color: #89DDFF">{</span><span style="color: #F07178"> </span><span style="color: #BABED8">redirect</span><span style="color: #F07178"> </span><span style="color: #89DDFF">}</span><span style="color: #BABED8"> </span><span style="color: #89DDFF; font-style: italic">from</span><span style="color: #BABED8"> </span><span style="color: #89DDFF">&#39;</span><span style="color: #C3E88D">@sveltejs/kit</span><span style="color: #89DDFF">&#39;</span><span style="color: #89DDFF">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #89DDFF; font-style: italic">export</span><span style="color: #BABED8"> </span><span style="color: #C792EA">const</span><span style="color: #BABED8"> prerender </span><span style="color: #89DDFF">=</span><span style="color: #BABED8"> </span><span style="color: #FF9CAC">true</span><span style="color: #89DDFF">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #676E95; font-style: italic">/** </span><span style="color: #89DDFF; font-style: italic">@</span><span style="color: #C792EA; font-style: italic">type</span><span style="color: #676E95; font-style: italic"> </span><span style="color: #89DDFF; font-style: italic">{</span><span style="color: #FFCB6B; font-style: italic">import(&#39;./$types&#39;).PageLoad</span><span style="color: #89DDFF; font-style: italic">}</span><span style="color: #676E95; font-style: italic"> */</span></span>
+<span class="line"><span style="color: #89DDFF; font-style: italic">export</span><span style="color: #BABED8"> </span><span style="color: #C792EA">function</span><span style="color: #BABED8"> </span><span style="color: #82AAFF">load</span><span style="color: #89DDFF">()</span><span style="color: #BABED8"> </span><span style="color: #89DDFF">{</span></span>
+<span class="line"><span style="color: #F07178">  </span><span style="color: #89DDFF; font-style: italic">throw</span><span style="color: #F07178"> </span><span style="color: #82AAFF">redirect</span><span style="color: #F07178">(</span><span style="color: #F78C6C">307</span><span style="color: #89DDFF">,</span><span style="color: #F07178"> </span><span style="color: #89DDFF">&#39;</span><span style="color: #C3E88D">/site-admin</span><span style="color: #89DDFF">&#39;</span><span style="color: #F07178">)</span><span style="color: #89DDFF">;</span></span>
+<span class="line"><span style="color: #89DDFF">}</span></span>
+<span class="line"></span></code><!-- HTML_TAG_END -->
+      </pre></div>  </div></div></div>  <div slot="main-bottom" data-svelte-h="svelte-1kg7zek">Main Bottom</div></main> <div class="992:flex-1"></div> <div class="on-this-page scrollbar pt-8 pb-8 hidden overflow-auto min-w-[160px] sticky right-4 pr-4 1440:right-6 1440:pr-2 1280:block pl-0.5 top-[var(--kd--navbar-height)] max-h-[calc(100vh-var(--kd--navbar-height))]" style=""></div></div></div> 
+			<script type="application/json" data-sveltekit-fetched data-url="/kit-docs/index.meta">{"status":200,"statusText":"","headers":{},"body":""}</script>
+			<script>
+				{
+					__sveltekit_1fsijp2 = {
+						base: new URL(".", location).pathname.slice(0, -1),
+						env: null
+					};
+
+					const element = document.currentScript.parentElement;
+
+					const data = [null,null];
+
+					Promise.all([
+						import("./_app/immutable/entry/start.fBXH6Gs9.js"),
+						import("./_app/immutable/entry/app.4aNdMc5w.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 2],
+							data,
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>
